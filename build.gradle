@@ -14,7 +14,7 @@ apply plugin: 'java'
 apply plugin: 'org.jetbrains.intellij'
 
 intellij {
-    version 'LATEST-EAP-SNAPSHOT'
+    version '2020.1.1'
     pluginName 'Voice Code IDEA'
     updateSinceUntilBuild false
     sameSinceUntilBuild true
@@ -28,11 +28,12 @@ tasks.withType(JavaCompile) {
 group 'com.github.anonfunc.vcidea'
 version '0.0.10'
 
-
+/*
 publishPlugin {
     username 'anonfunc'
     password jetbrainsPassword
 }
+*/
 
 repositories {
     mavenCentral()
