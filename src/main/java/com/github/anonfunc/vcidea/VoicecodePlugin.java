@@ -67,10 +67,10 @@ public class VoicecodePlugin implements ApplicationComponent, HttpHandler {
             e.printStackTrace();
         }
 
-        Notification notification =new Notification("vc-idea",
-                "Voicecode Plugin","Listening on http://localhost:" + port + "/" + nonce,
-                NotificationType.INFORMATION);
-        Notifications.Bus.notify(notification);
+//        Notification notification =new Notification("vc-idea",
+//                "Voicecode Plugin","Listening on http://localhost:" + port + "/" + nonce,
+//                NotificationType.INFORMATION);
+//        Notifications.Bus.notify(notification);
 
         // https://stackoverflow.com/questions/3732109/simple-http-server-in-java-using-only-java-se-api#3732328
         final InetSocketAddress loopbackSocket = new InetSocketAddress(InetAddress.getLoopbackAddress(), port);
